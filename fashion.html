@@ -1,145 +1,273 @@
-<!DOCTYPE html;
-<html lang="en">
-<head>
-    <title>E-Commerce</title>
-</head>
-<style>
-    
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+<!doctype html>
+<html>
+    <head>
+        <title>Fashion</title>
+        <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+                                
+    <style>
+        ::-webkit-scrollbar {
+          width: 8px;
+            }
+        /* Track */
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1; 
+            }
+                                 
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: #888; 
+            }
+                                
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+              background: #555; 
+                } 
+
+        body {
+        margin: 0;
+        font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        font-size: .8125rem;
+        font-weight: 400;
+        line-height: 1.5385;
+        color: #333;
+        text-align: left;
+        background-color: skyblue;
 }
- 
-body
-{
-    background-color: black;
+
+.mt-50{
+    margin-top: 50px;
 }
- 
-.badan
-{
-    width: 880px;
-    margin: 35px auto;
-    background-color: white;
-    padding: 20px;
-    overflow: hidden;
+.mb-50{
+    margin-bottom: 50px;
 }
- 
-.badan h2
-{
-    color: crimson;
-    border-bottom: 1px solid gainsboro;
-    margin: 5px;
-    margin-bottom: 13px;
+
+
+.bg-teal-400 { 
+    background-color: #26a69a;
 }
- 
-.list-produk
-{
-    border: 1px solid gainsboro;
-    padding: 10px;
-    float: left;
-    width: 200px;
-    margin: 5px;
+
+a{
+    text-decoration: none !important;
 }
- 
-.list-produk:hover
-{
-    transition-duration: 700ms;
-    box-shadow: 5px 5px gainsboro;
+
+
+.fa {
+        color: gold;
 }
- 
-.list-produk img
-{
-    width: 100%;
-    height: 175px;
-    display: block;
-    margin-bottom: 5px;
+
+.back {
+   background-color: skyblue;
 }
- 
-.list-produk h4, .list-produk h5
-{
-    color: crimson;
-    text-align: center;
-    margin-bottom: 5px;
-}
- 
-.tombol
-{
-    text-decoration: none;
-    border-radius: 7px;
-    padding: 7px;
-    display: block;
-    float: left;
-    width: 45%;
-    margin: 4px;
-    text-align: center;
-    color: white;
-}
- 
-.tombol:hover
-{
-    background-color: black;
-    transition-duration: 700ms;
-}
- 
-.tombol-detail
-{
-    background-color: green;
-}
- 
-.tombol-beli
-{
-    background-color: crimson;
-}
-    
+
 </style>
-<body>
-     
-    <div class="badan">
-        <h2>Produk Baru</h2>
- 
-        <div class="list-produk">
-            <img src="gambar/jaket-parasut.jpg" alt="Jaket Parasut">
- 
-            <h4>Jaket Parasut Polos</h4>
-            <h5>Rp 150.000,-</h5>
- 
-            <a class="tombol tombol-detail" href="#">Detail</a>
-            <a class="tombol tombol-beli" href="#">Beli</a>
-        </div>
- 
-        <div class="list-produk">
-            <img src="gambar/jaket-tactical.jpg" alt="Jaket Tactical">
- 
-            <h4>Jaket Tactical Hitam</h4>
-            <h5>Rp 230.000,-</h5>
- 
-            <a class="tombol tombol-detail" href="#">Detail</a>
-            <a class="tombol tombol-beli" href="#">Beli</a>
-        </div>
- 
-        <div class="list-produk">
-            <img src="gambar/bomber-stylish.jpg" alt="Jaket Bomber Stylish">
- 
-            <h4>Jaket Bomber Stylish</h4>
-            <h5>Rp 250.000,-</h5>
- 
-            <a class="tombol tombol-detail" href="#">Detail</a>
-            <a class="tombol tombol-beli" href="#">Beli</a>
-        </div>
- 
-        <div class="list-produk">
-            <img src="gambar/jaket-naruto.jpg" alt="Jaket Naruto">
- 
-            <h4>Jaket Naruto</h4>
-            <h5>Rp 170.000,-</h5>
- 
-            <a class="tombol tombol-detail" href="#">Detail</a>
-            <a class="tombol tombol-beli" href="#">Beli</a>
+</head>
+    <body className='snippet-body'>
+
+    <button class="back"><a href="website.html">Back</button></a>
+
+        <div class="container d-flex justify-content-center mt-50 mb-50">
+            
+        <div class="row">
+           <div class="col-md-10">
+            
+                <div class="card card-body">
+                            <div class="media align-items-center align-items-lg-start text-center text-lg-left flex-column flex-lg-row">
+                                <div class="mr-2 mb-3 mb-lg-0">
+                                    
+                                        <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//105/MTA-9189456/melco_kaos_polos_hitam_full03_eqm7n5xv.jpg" 
+                                        width="150" height="150" alt="">
+                                   
+                                </div>
+
+                                <div class="media-body">
+                                    <h6 class="media-title font-weight-semibold">
+                                        <a href="#" data-abc="true">Kaos Polos Hitam</a>
+                                    </h6>
+
+                                    <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
+                                        <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">Kaos</a></li>
+                                        <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">Kaos Hitam</a></li>
+                                    </ul>
+
+                                    <p class="mb-3">dibuat dari bahan berkualitas tinggi. Kombinasi warna dengan variasi design printing dan bordir yang lucu dan unik, akan membuat tampil semakin menarik.</p>
+
+                                    <ul class="list-inline list-inline-dotted mb-0">
+                                        <li class="list-inline-item">All items from <a href="#" data-abc="true">Indonesia</a></li>
+                                        <li class="list-inline-item">Add to <a href="#" data-abc="true">wishlist</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="mt-3 mt-lg-0 ml-lg-3 text-center">
+                                    <h3 class="mb-0 font-weight-semibold">Rp 50.000,00</h3>
+
+                                    <div>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+
+                                    </div>
+
+                                    <div class="text-muted">36k reviews</div>
+
+                                    <button type="button" class="btn btn-warning mt-4 text-white"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    
+
+
+
+
+
+                    <div class="card card-body mt-3">
+                            <div class="media align-items-center align-items-lg-start text-center text-lg-left flex-column flex-lg-row">
+                                <div class="mr-2 mb-3 mb-lg-0">
+                                    
+                                        <img src="https://s1.bukalapak.com/img/64711461491/s-330-330/data.jpeg.webp" width="150" height="150" alt="">
+                                   
+                                </div>
+
+                                <div class="media-body">
+                                    <h6 class="media-title font-weight-semibold">
+                                        <a href="#" data-abc="true">Jaket</a>
+                                    </h6>
+
+                                    <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
+                                        <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">Jaket</a></li>
+                                        <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">Hoodie</a></li>
+                                    </ul>
+
+                                    <p class="mb-3">Bahan parasut despo, Dalam furring, Logo bordir, Size : M, L, XL</p>
+
+                                    <ul class="list-inline list-inline-dotted mb-0">
+                                        <li class="list-inline-item">All items from <a href="#" data-abc="true">Indonesia</a></li>
+                                        <li class="list-inline-item">Add to <a href="#" data-abc="true">wishlist</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="mt-3 mt-lg-0 ml-lg-3 text-center">
+                                    <h3 class="mb-0 font-weight-semibold">Rp 199.000,00</h3>
+
+                                    <div>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+
+                                    </div>
+
+                                    <div class="text-muted">23k reviews</div>
+
+                                    <button type="button" class="btn btn-warning mt-4 text-white"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+                                </div>
+                            </div>
+                        </div>    
+
+
+
+
+
+                        <div class="card card-body mt-3">
+                            <div class="media align-items-center align-items-lg-start text-center text-lg-left flex-column flex-lg-row">
+                                <div class="mr-2 mb-3 mb-lg-0">
+                                    
+                                        <img src="https://asset-a.grid.id/crop/0x0:0x0/700x0/photo/2021/05/04/img_20210504_134853jpg-20210504015034.jpg" width="150" height="150" alt="">
+                                   
+                                </div>
+
+                                <div class="media-body">
+                                    <h6 class="media-title font-weight-semibold">
+                                        <a href="#" data-abc="true">Celana Cargo</a>
+                                    </h6>
+
+                                    <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
+                                        <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">Celana</a></li>
+                                        <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">Celana Cargo</a></li>
+                                    </ul>
+
+                                    <p class="mb-3">Celana cargo ini terbuat dari bahan katun yang nyaman untuk dipakai. Selain itu, dilengkapi dengan 6 kantong yang terdapat pada bagian depan 4 dan belakang 2 kantong.</p>
+
+                                    <ul class="list-inline list-inline-dotted mb-0">
+                                        <li class="list-inline-item">All items from <a href="#" data-abc="true">Indonesia</a></li>
+                                        <li class="list-inline-item">Add to <a href="#" data-abc="true">wishlist</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="mt-3 mt-lg-0 ml-lg-3 text-center">
+                                    <h3 class="mb-0 font-weight-semibold">Rp 198.000,00</h3>
+
+                                    <div>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+
+                                    </div>
+
+                                    <div class="text-muted">120k reviews</div>
+
+                                    <button type="button" class="btn btn-warning mt-4 text-white"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                         <div class="card card-body mt-3">
+                            <div class="media align-items-center align-items-lg-start text-center text-lg-left flex-column flex-lg-row">
+                                <div class="mr-2 mb-3 mb-lg-0">
+                                    
+                                        <img src="https://www.jakartanotebook.com/images/products/95/63/27652/124/jiangxihuitian-topi-baseball-polos-xx2-black-with-white-side-141.jpg" width="150" height="150" alt="">
+                                   
+                                </div>
+
+                                <div class="media-body">
+                                    <h6 class="media-title font-weight-semibold">
+                                        <a href="#" data-abc="true">Topi</a>
+                                    </h6>
+
+                                    <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
+                                        <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">Topi</a></li>
+                                    </ul>
+
+                                    <p class="mb-3">Desain topi kasual yang keren dan pilihan warna yang menarik membuat topi ini sangat cocok untuk digunakan. Menambah keren penampilan kasual Anda sekaligus melindungi kepala Anda.</p>
+
+                                    <ul class="list-inline list-inline-dotted mb-0">
+                                        <li class="list-inline-item">All items from <a href="#" data-abc="true">Indonesia</a></li>
+                                        <li class="list-inline-item">Add to <a href="#" data-abc="true">wishlist</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="mt-3 mt-lg-0 ml-lg-3 text-center">
+                                    <h3 class="mb-0 font-weight-semibold">Rp 30.000,00</h3>
+
+                                    <div>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+
+                                    </div>
+
+                                    <div class="text-muted">10k reviews</div>
+
+                                    <button type="button" class="btn btn-warning mt-4 text-white"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+                                </div>
+                            </div>
+                        </div> 
+                        
+
+
+                             
+        </div>                     
         </div>
     </div>
- 
-</body>
-</html>
+                                </body>
+                            </html>
